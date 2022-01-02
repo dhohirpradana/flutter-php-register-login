@@ -24,9 +24,10 @@ class Auth {
     try {
       final response = await dio.post(BaseUrl.signin, data: formData);
       if (response.data['status'] == 1) {
-        var getUsersData = response.data['data'] as List;
-        var user = getUsersData.map((i) => User.fromMap(i)).toList();
-        userController.updateUser(user[0]);
+        var usersData = response.data['data'] as List;
+        // var user = getUsersData.map((i) => User.fromMap(i)).toList();
+        var userModel = User.fromMap(usersData.asMap()[0]);
+        userController.updateUser(userModel);
       } else {
         getx.Get.snackbar(
           "Gagal",
