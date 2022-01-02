@@ -1,7 +1,6 @@
 // ignore_for_file: must_be_immutable
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/models/user.dart';
-import 'package:flutter_application_1/pages/login_page.dart';
 import 'package:flutter_application_1/services/auth_services.dart';
 import 'package:flutter_application_1/services/validator/text_validator.dart';
 import 'package:get/get.dart';

@@ -2,7 +2,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constants/api.dart';
 import 'package:flutter_application_1/models/user.dart';
-import 'package:flutter_application_1/pages/login_page.dart';
 import 'package:get/get.dart' as getx;
 import 'getx/get_auth.dart';
 

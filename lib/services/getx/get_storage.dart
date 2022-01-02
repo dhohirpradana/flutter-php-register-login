@@ -8,7 +8,7 @@ Future<User?> boxUser() async {
   final userController = Get.put(UserController());
   final box = GetStorage();
   final user = (box.read('user') != null) ? jsonDecode(box.read('user')) : null;
-  ;
+
   late User? decodedUser;
   if (user != null) {
     decodedUser = User.fromMap(user);
